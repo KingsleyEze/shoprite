@@ -9,7 +9,9 @@
 namespace app\Http\AppConstants;
 
 
-class ProductType
+ class ProductType
 {
+    const ELECTRONICS = 1;
+    const CLOTHING = 2;
 
 }
