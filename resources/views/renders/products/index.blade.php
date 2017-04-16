@@ -22,14 +22,14 @@
                                         <img src="/images/products/{{ $product->productImage->file_name }}" alt=""/>
                                         <h2>&#8358; {{$product->price}}</h2>
                                         <p>{{$product->name}}</p>
-                                        <a href="#" class="btn btn-default add-to-cart"><i
+                                        <a href="product/details/{{ $product->id }}" class="btn btn-default add-to-cart"><i
                                                     class="fa fa-shopping-cart"></i>View</a>
                                     </div>
                                     <div class="product-overlay">
                                         <div class="overlay-content">
                                             <h2>&#8358; {{$product->price}}</h2>
                                             <p>{{$product->name}}</p>
-                                            <a href="#" class="btn btn-default add-to-cart"><i
+                                            <a href="/product/details/{{ $product->id }}" class="btn btn-default add-to-cart"><i
                                                         class="fa fa-shopping-cart"></i>View</a>
                                         </div>
                                     </div>

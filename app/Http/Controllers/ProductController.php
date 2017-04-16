@@ -24,8 +24,10 @@ class ProductController extends Controller
         return view('renders.products.index', compact('productTypes','products'));
     }
 
-    public function productDetails()
+    public function productDetails(Request $request, $productId)
     {
-        return view('renders.products.product_details');
+        $productTypes = ProductTypes::all();
+        $selectedProduct = Products::where('id', $productId)->with('productImage')->first();
+        return view('renders.products.product_details', compact('productTypes', 'selectedProduct'));
     }
 }
