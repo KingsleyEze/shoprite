@@ -13,7 +13,6 @@ class ProductController extends Controller
     {
         $productTypes = ProductTypes::all();
         $products = Products::with('productImage')->get();
-        //dd($products);
         return view('renders.products.index', compact('productTypes','products'));
     }
 
